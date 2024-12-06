@@ -1,0 +1,32 @@
+/* Style for hovedmenu */
+.main-menu {
+  background-color: #d61482;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu ul li {
+  display: inline; /* Gør hvert punkt i listen til inline, så de vises på samme linje */
+  margin: 0 15px; /* Lidt afstand mellem hvert link */
+}
+
+.main-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.main-menu ul li a:hover {
+  color: #760808; /* Ændrer farve ved hover for at give feedback */
+}
+
+.active {
+  color: #ff6600; /* Markerer den aktuelle side */
+}

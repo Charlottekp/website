@@ -1,0 +1,18 @@
+#forside {
+  width: 100%; /* Fylder hele bredden af siden */
+  height: 100vh; /* Fylder hele højden af viewport */
+  position: absolute;
+  background-image: url("../svg/forside.svg"); /* Sti til din SVG-fil */
+  background-size: cover; /* Skalerer SVG'en, så den fylder hele baggrunden */
+  background-position: center; /* Centrer SVG'en i baggrunden */
+  background-repeat: no-repeat; /* Forhindrer gentagelse af SVG'en */
+}
+* Spilbaggrund og elementer */ #game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../svg/diskobaggrund.svg);
+  background-size: cover;
+}

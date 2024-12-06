@@ -1,0 +1,86 @@
+/* Reset styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: #ffc0cb; /* Lyserød baggrund */
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+}
+
+/* Importer cool skrifttype fra Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap");
+
+/* h1 styling */
+h1 {
+  font-family: "Oswald", sans-serif; /* Cool skrifttype */
+  font-size: 3rem; /* Større tekst */
+  color: #ba5050; /* Passende farve */
+  text-transform: uppercase; /* Større bogstaver */
+  letter-spacing: 2px; /* Øger afstanden mellem bogstaverne */
+  text-align: center; /* Centrerer teksten */
+  margin-bottom: 20px;
+}
+
+/* h2 styling - lyserød farve */
+h2 {
+  color: #ff007f; /* Lyserød farve til h2 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Galleri container */
+.gallery-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Galleri items */
+.gallery-item {
+  text-align: center;
+  background-color: #ba5050;
+  border: 2px solid #f8d7da;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%; /* Gør billederne og teksten responsivt bredere */
+  box-shadow: 0px 4px 6px rgba(62, 9, 9, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Gør første billede mindre */
+.gallery-item:first-child img {
+  max-width: 50%; /* Reducerer bredden til 50% */
+  height: auto; /* Bevarer billedets proportioner */
+}
+
+/* Alle p-tags til at være hvide */
+.gallery-item p,
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white; /* Gør teksten hvid */
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}

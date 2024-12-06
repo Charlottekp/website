@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spil</title>
+    <link rel="stylesheet" href="css/menu.css"> <!-- Link til din CSS-fil -->
+    <link rel="stylesheet" href="css/spil.css">
+    <link rel="stylesheet" href="js/spil.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html" class="active">Forside</a></li>
+                <li><a href="assets.html">Assets</a></li>
+                <li><a href="grafik.html">Grafik</a></li>
+                <li><a href="spil.html">Spil</a></li>
+                <li><a href="teknik.html">Teknik</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="screen">
+            <div id="game">
+                <div id="game_background"></div>
+                <div id="game_elements">
+                    <div id="good_container1">
+                        <div id="good_sprite1"></div>
+                    </div>
+                    <div id="bad_container1">
+                        <div id="bad_sprite1"></div>
+                    </div>
+                </div>
+                <div id="game_foreground"></div>
+                <div id="game_ui">
+                    <div id="score_board">
+                        <div id="points"></div>
+                    </div>
+                    <div id="life_board">
+                        <div id="liv"></div>
+                    </div>
+                    <div id="time_board">
+                        <div id="time_container">
+                            <div id="time_sprite"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="start">
+                <div id="start_knap"></div>
+            </div>
+            <div id="game_over">
+                <div id="genstart1"></div>
+            </div>
+            <div id="level_complete">
+                <div id="genstart2"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/spil.js"></script>
+</body>
+
+
+</html>

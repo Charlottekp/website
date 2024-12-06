@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 49.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ad1611;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: #ff9eff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="60" height="49.2"/>
+    </clipPath>
+  </defs>
+  <g id="Lag_1-2" data-name="Lag 1">
+    <g class="cls-4">
+      <path class="cls-5" d="M54.4,10.9v-5.4h-5.4V.1h-10.9v5.4h-5.4v5.4h-5.4v-5.4h-5.4V.1h-10.9v5.4h-5.4v5.4H.2v16.3h5.4v5.4h5.4v5.4h10.9v5.4h5.4v5.4h5.4v-5.4h5.4v-5.4h10.9v-5.4h5.4v-5.4h5.4V10.9h-5.4Z"/>
+    </g>
+    <path class="cls-3" d="M54.4,10.9v16.3h-5.4v5.4h-10.9v5.4h-5.4v5.4h-5.4v-5.4h-5.4v-5.4h-10.9v-5.4h-5.4V10.9h5.4v-5.4h10.9v5.4h5.4v5.4h5.4v-5.4h5.4v-5.4h10.9v5.4h5.4Z"/>
+    <path class="cls-2" d="M16.3,10.9v5.4h-5.4v5.4h10.9v-10.9h-5.5v.1Z"/>
+  </g>
+</svg>

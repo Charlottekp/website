@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#start {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../svg/forside.svg);
+  background-size: cover;
+}
+#start_knap {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 10%;
+  background-image: url(../svg/play.svg);
+  aspect-ratio: 127.5/129.6;
+}
+#game_over {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../svg/gameover.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#level_complete {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../svg/winner.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skjul {
+  display: none;
+}
+/* Spilbaggrund og elementer */
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../svg/diskobaggrund.svg);
+  background-size: cover;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(assets/forground.svg);
+  background-size: cover;
+  pointer-events: none;
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* Scoring og liv */
+#score_board {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  aspect-ratio: 105/270;
+  width: 5%;
+  background-image: url(../svg/points.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#points {
+  font-family: "Pacifico", cursive;
+  font-size: xx-large;
+  margin-top: 148%;
+  margin-left: 29%;
+}
+
+#life_board {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  aspect-ratio: 135/115;
+  width: 5%;
+  background-image: url(../svg/liv.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#liv {
+  font-family: "Pacifico", cursive;
+  font-size: xx-large;
+  margin-left: 120%;
+}
+#good_container1 {
+  position: absolute;
+  top: -8%;
+  aspect-ratio: 135/115;
+  width: 5%;
+}
+
+#good_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../svg/håndtaskepink.svg);
+  background-size: cover;
+}
+
+#bad_container1 {
+  position: absolute;
+  top: -8%;
+  aspect-ratio: 135/115;
+  width: 5%;
+}
+
+#bad_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../svg/skraldesæk.svg);
+  background-size: cover;
+}
+.pos1 {
+  left: 20%;
+}
+.pos2 {
+  left: 30%;
+}
+.pos3 {
+  left: 40%;
+}
+.pos4 {
+  left: 50%;
+}
+.pos5 {
+  left: 60%;
+}
+.pos6 {
+  left: 70%;
+}
+.fald {
+  animation-name: fald_kf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes fald_kf {
+  100% {
+    translate: 0 1500%;
+  }
+}
+
+.forsvind_good {
+  animation-name: forsvind_good_kf;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes forsvind_good_kf {
+  100% {
+    rotate: 600deg;
+    scale: 0;
+  }
+}
+
+.forsvind_bad {
+  animation-name: forsvind_bad_kf;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes forsvind_bad_kf {
+  20% {
+    scale: 1.5;
+  }
+  30% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 0.3s;
+}
+
+.delay3 {
+  animation-delay: 0.6s;
+}
+
+.delay4 {
+  animation-delay: 0.9s;
+}
+
+#time_container {
+  position: absolute;
+  width: 3%;
+  height: 30%;
+  top: 5%;
+  left: 95%;
+  border: 0.2vw solid white;
+}
+
+#time_sprite {
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 100%;
+  background-color: rgb(225, 40, 117);
+}
+
+.time {
+  animation-name: time_kf;
+  animation-duration: 20s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes time_kf {
+  0% {
+    transform: scaleY(1);
+    background-color: rgb(74, 3, 69);
+  }
+
+  50% {
+    transform: scaleY(0.5);
+    background-color: rgb(172, 44, 153);
+  }
+
+  100% {
+    transform: scaleY(0);
+    background-color: rgb(229, 157, 234);
+  }
+}
